@@ -52,6 +52,10 @@ const HeaderStyled = styled.header`
     @media screen and (max-width: 990px) {
       padding: 0 3rem;
     }
+
+    @media screen and (max-width: 990px) {
+      padding: 1rem;
+    }
   }
 `;
 

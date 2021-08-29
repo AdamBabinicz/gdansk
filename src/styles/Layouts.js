@@ -14,6 +14,10 @@ export const OuterLayout = styled.section`
   @media screen and (max-width: 990px) {
     padding: 0 3rem;
   }
+
+  @media screen and (max-width: 700px) {
+    padding: 1rem;
+  }
 `;
 
 export const InnerLayout = styled.section`

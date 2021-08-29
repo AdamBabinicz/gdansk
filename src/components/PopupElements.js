@@ -28,37 +28,15 @@ export const PopupInner = styled.div`
   padding: 32px;
   width: 100%;
   max-height: 100%;
-  height: aut;
-  width: 640px;
+  max-width: 640px;
   background: #fff;
-  font-family: "Black Ops One", cursive;
 
-  h3 {
-    font-size: 1.5rem;
-    color: var(--text-light);
-  }
-
-  img {
-    max-width: 65%;
-  }
-
-  p {
-    font-size: 1.1rem;
-  }
-  em {
-    margin-top: 0.5rem;
-    font-style: italic;
-    font-size: 1rem;
-  }
-
-  @media screen and (max-width: 670px) {
+  @media screen and (max-width: 480px) {
     font-size: 1.4rem;
-    width: 90%;
-    p {
-      font-size: 0.9rem;
-    }
+    max-width: 100%;
+
     img {
-      max-width: 100%;
+      max-width: 80%;
     }
   }
 `;
@@ -76,7 +54,7 @@ export const Button = styled.button`
   align-items: center;
 
   @media screen and (max-width: 480px) {
-    top: 12px;
-    right: 12px;
+    top: 4px;
+    right: 4px;
   }
 `;

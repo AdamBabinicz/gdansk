@@ -30,9 +30,9 @@ function Navigation({ toggle }) {
       <Link to="/" smooth={true} offset={-70} duration={500} className="logo">
         <img src={logo} alt="..." />
       </Link>
-      <MobileIcon>
+      <div className="ic">
         <FaBars onClick={toggle} style={{ cursor: "pointer" }} />
-      </MobileIcon>
+      </div>
       <ul>
         <li>
           <Link
@@ -122,6 +122,20 @@ function Navigation({ toggle }) {
 }
 
 const NavigationStyled = styled.nav`
+  .ic {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      /* transform: translateX(500%); */
+      color: #333;
+      font-size: 2.4rem;
+      /* text-align: right; */
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 10;
+    }
+  }
   display: flex;
   justify-content: space-between;
   min-height: 10vh;
@@ -153,20 +167,6 @@ const NavigationStyled = styled.nav`
   }
 `;
 
-const MobileIcon = styled.div`
-  display: none;
-  @media (max-width: 768px) {
-    display: block;
-    /* transform: translateX(500%); */
-    color: #333;
-    font-size: 2.4rem;
-    /* text-align: right; */
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 10;
-  }
-`;
 const Link = styled(LinkS)`
   display: flex;
   justify-content: center;

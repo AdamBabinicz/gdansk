@@ -1,25 +1,69 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Header from "./components/Header";
+import Navigation from "./components/Navigation";
+import { OuterLayout } from "./styles/Layouts";
+import CardSection from "./components/CardSection";
+import styled from "styled-components";
+import ChartSection from "./components/ChartSection";
+import MessagingSection from "./components/MessagingSection";
+import PaymentSection from "./components/PaymentSection";
+import FAQSection from "./components/FAQSection";
+import Footer from "./components/Footer";
+import Slider from "./components/Slider";
+// import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
+  const smallScreen = window.screen.width <= 480 ? true : false;
+
+  const [isOpen, setisOpen] = useState(false);
+  const toggle = () => {
+    setisOpen(!isOpen);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Router>
+        <Header toggle={toggle} />
+        <Switch>
+          <OuterLayout>
+            <MainStyled>
+              <Route path="/poczatki" component={CardSection}>
+                <CardSection />
+              </Route>
+              <Route path="/nazwa" component={ChartSection}>
+                <ChartSection />
+              </Route>
+              <Route path="/rozwoj" component={MessagingSection}>
+                <MessagingSection />
+              </Route>
+              <Route path="/amberif" component={PaymentSection}>
+                <PaymentSection />
+              </Route>
+              <Route path="/ciekawostki" component={FAQSection}>
+                <FAQSection />
+              </Route>
+            </MainStyled>
+          </OuterLayout>
+        </Switch>
+        <Footer />
+      </Router> */}
+
+      <Header />
+      <OuterLayout>
+        <MainStyled>
+          <CardSection />
+          <ChartSection />
+          <MessagingSection />
+          <PaymentSection />
+          <FAQSection />
+          <Slider />
+        </MainStyled>
+      </OuterLayout>
+      <Footer />
+    </>
   );
 }
+
+const MainStyled = styled.main``;
 
 export default App;

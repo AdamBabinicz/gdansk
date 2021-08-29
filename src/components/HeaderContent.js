@@ -96,6 +96,10 @@ const HeaderContentStyled = styled.div`
         padding: 1.4rem 0;
         font-family: "Tahoma", sans-serif;
         line-height: 1.8rem;
+
+        @media screen and (max-width: 700px) {
+          padding: 0 1rem;
+        }
       }
     }
   }

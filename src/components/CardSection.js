@@ -43,12 +43,13 @@ const CardSectionStyled = styled.section`
     .card-left {
       padding-right: 3rem;
 
-      @media screen and (max-width: 700px) {
-        padding: 1rem;
-      }
       p {
         padding: 1.4rem 0;
         line-height: 1.8rem;
+
+        @media screen and (max-width: 700px) {
+          padding: 1rem;
+        }
       }
       .secondary-heading {
         font-size: 3rem;

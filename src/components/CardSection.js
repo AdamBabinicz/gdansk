@@ -51,12 +51,15 @@ const CardSectionStyled = styled.section`
         line-height: 1.8rem;
       }
       .secondary-heading {
-        font-size: 1.7rem;
+        font-size: 3rem;
         font-family: "Tourney", cursive;
         font-weight: bold;
-        font-size: 3rem;
         color: var(--dark-primary);
         line-height: 1.8rem;
+
+        @media screen and (max-width: 700px) {
+          font-size: 2rem;
+        }
       }
     }
     .card-right {

@@ -70,12 +70,15 @@ const MessageStyle = styled.section`
         padding: 0;
       }
       .secondary-heading {
-        font-size: 1.7rem;
+        font-size: 3rem;
         font-family: "Tourney", cursive;
         font-weight: bold;
-        font-size: 3rem;
         color: var(--dark-primary);
         line-height: 1.8rem;
+
+        @media screen and (max-width: 700px) {
+          font-size: 2rem;
+        }
       }
       .m-para {
         padding: 1.3rem 0 2rem;

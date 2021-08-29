@@ -121,6 +121,10 @@ const ChartStyled = styled.section`
         font-weight: bold;
         font-size: 3rem;
         color: var(--dark-primary);
+
+        @media screen and (max-width: 700px) {
+          font-size: 2rem;
+        }
       }
       p {
         padding: 1.3rem 0;

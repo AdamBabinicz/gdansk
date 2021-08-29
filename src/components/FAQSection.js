@@ -46,6 +46,10 @@ const FaqStyled = styled.section`
 
     @media screen and (max-width: 700px) {
       font-size: 2rem;
+    }
+
+    @media screen and (max-width: 700px) {
+      font-size: 2rem;
       margin-top: 2rem;
     }
 

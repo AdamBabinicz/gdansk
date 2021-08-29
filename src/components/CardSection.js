@@ -23,9 +23,7 @@ function CardSection() {
               roku sygnowanym przez księcia pomorskiego Mściwoja II.
             </p>
           </div>
-          <div className="card-right">
-            <img src={img} alt="..." />
-          </div>
+          <div className="card-right">{/* <img src={img} alt="..." /> */}</div>
         </div>
       </InnerLayout>
     </CardSectionStyled>

@@ -160,7 +160,7 @@ const MobileIcon = styled.div`
     /* transform: translateX(500%); */
     color: #333;
     font-size: 2.4rem;
-    text-align: right;
+    /* text-align: right; */
     position: fixed;
     top: 1rem;
     right: 1rem;

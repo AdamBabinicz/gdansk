@@ -53,7 +53,7 @@ const HeaderStyled = styled.header`
       padding: 0 3rem;
     }
 
-    @media screen and (max-width: 990px) {
+    @media screen and (max-width: 700px) {
       padding: 1rem;
     }
   }

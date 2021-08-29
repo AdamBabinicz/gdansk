@@ -122,6 +122,17 @@ function Navigation({ toggle }) {
 }
 
 const NavigationStyled = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  min-height: 10vh;
+  align-items: center;
+  position: fixed;
+
+  .logo img {
+    width: 3rem;
+    cursor: pointer;
+  }
+
   .ic {
     display: none;
     @media (max-width: 768px) {
@@ -135,16 +146,6 @@ const NavigationStyled = styled.nav`
       right: 1rem;
       z-index: 10;
     }
-  }
-  display: flex;
-  justify-content: space-between;
-  min-height: 10vh;
-  align-items: center;
-  position: fixed;
-
-  .logo img {
-    width: 3rem;
-    cursor: pointer;
   }
 
   ul {

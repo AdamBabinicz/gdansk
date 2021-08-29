@@ -66,10 +66,9 @@ const CardSectionStyled = styled.section`
       justify-content: flex-end;
 
       @media screen and (max-width: 700px) {
-        background: red;
         justify-content: center;
         img {
-          /* max-width: 100%; */
+          max-width: 100%;
         }
       }
     }

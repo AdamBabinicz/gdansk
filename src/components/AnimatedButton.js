@@ -28,6 +28,11 @@ const AnimatedButtonStyled = styled.button`
   position: relative;
   transition: all 0.3s;
 
+  @media screen and (max-width: 700px) {
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+  }
+
   img {
     width: 3rem;
     padding-left: 0.9rem;

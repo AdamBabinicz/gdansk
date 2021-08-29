@@ -96,14 +96,14 @@ const PaymentStyled = styled.section`
   .card-con {
     display: grid;
     /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     grid-gap: 3rem;
     padding-top: 7.5rem;
 
-    @media screen and (max-width: 570px) {
+    /* @media screen and (max-width: 570px) {
       grid-template-columns: repeat(1, 1fr);
       row-gap: 2rem;
-    }
+    } */
   }
   .small-heading {
     font-family: "Tourney", cursive;

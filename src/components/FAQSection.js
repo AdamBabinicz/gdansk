@@ -10,7 +10,7 @@ function FAQSection() {
     <FaqStyled id="/ciekawostki">
       <InnerLayout>
         <h3 className="small-heading">
-          Ciekawostki <span> &nbsp; o Gdańsku</span>
+          Ciekawostki <span> o&nbsp; Gdańsku</span>
         </h3>
         <p className="c-para">
           W mieście jest wiele zabytków, z których należy wymienić m.in. ulicę
@@ -43,6 +43,11 @@ const FaqStyled = styled.section`
     line-height: 1.8rem;
     display: flex;
     justify-content: center;
+
+    @media screen and (max-width: 700px) {
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
 
     span {
       align-items: center;

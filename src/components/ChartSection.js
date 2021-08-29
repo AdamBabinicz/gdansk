@@ -18,7 +18,7 @@ function ChartSection() {
   // const [buttonPopup1, setButtonPopup1] = useState(false);
   const [state] = useState({
     title: "Gdańsk, 1575",
-    img: Img,
+    // img: Img,
     p0: "Taki sposób tworzenia nazw grodów od rzek był w słowiańszczyźnie powszechny (por. Puck od Putnica, Mieńsk od Mienia, Pińsk od Pina i wiele innych). Jeśli zaś chodzi o nazwę Gdania, rdzeń gъd- oznaczał teren wilgotny, podmokły (por. Gdynia, Gacka ← gъdьska, Gdinj itp.), zaś szereg sufiksów -Vnьja jest dla nazw rzek i strumieni na Pomorzu typowy (por. Gdynia, Radunia, Orania).",
     em: "pl.wikipedia.org/wiki/Gdańsk",
   });
@@ -89,6 +89,7 @@ const ChartStyled = styled.section`
         width: 100%;
       }
       .stats {
+        color: red;
         img {
           box-shadow: 0px 25px 50px rgba(22, 25, 79, 0.05);
           border-radius: 62px;

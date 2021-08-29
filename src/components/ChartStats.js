@@ -23,7 +23,12 @@ const ChartStatsStyled = styled.div`
 
   h4 {
     font-size: 3rem;
+    font-family: "Tahoma", sans-serif;
     color: var(--purple-primary);
+
+    @media screen and (max-width: 700px) {
+      font-size: 1.3rem;
+    }
   }
   p {
     color: var(--dark-primary);

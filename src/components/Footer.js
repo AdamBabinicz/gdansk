@@ -165,6 +165,12 @@ const Link = styled(LinkS)`
   font-weight: 500;
   border-radius: 0.5rem;
   cursor: pointer;
+  width: 100%;
+
+  @media screen and (max-width: 700px) {
+    justify-content: space-between;
+    background: green;
+  }
 
   &:hover {
     color: #f54748;

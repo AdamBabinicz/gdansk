@@ -23,7 +23,9 @@ function CardSection() {
               roku sygnowanym przez księcia pomorskiego Mściwoja II.
             </p>
           </div>
-          <div className="card-right">{/* <img src={img} alt="..." /> */}</div>
+          <div className="card-right">
+            <img src={img} alt="..." />
+          </div>
         </div>
       </InnerLayout>
     </CardSectionStyled>
@@ -34,7 +36,7 @@ const CardSectionStyled = styled.section`
   .card-container {
     display: grid;
     /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 
     /* @media screen and (max-width: 845px) {
       grid-template-columns: repeat(1, 1fr);
@@ -73,6 +75,7 @@ const CardSectionStyled = styled.section`
 
       @media screen and (max-width: 700px) {
         justify-content: center;
+        margin-bottom: 3rem;
         img {
           max-width: 100%;
         }

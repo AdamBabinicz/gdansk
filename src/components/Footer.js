@@ -123,7 +123,7 @@ const FooterStyled = styled.div`
 
       .logo-items {
         @media screen and (max-width: 700px) {
-          font-size: 1.3rem;
+          font-size: 1.2rem;
         }
         img {
           width: 6rem;
@@ -172,7 +172,6 @@ const Link = styled(LinkS)`
 
   @media screen and (max-width: 700px) {
     justify-content: space-between;
-    background: green;
   }
 
   &:hover {

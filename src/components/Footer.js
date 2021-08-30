@@ -110,7 +110,10 @@ const FooterStyled = styled.div`
     display: grid;
     /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    padding: 0 2rem;
+
+    @media screen and (max-width: 700px) {
+      padding: 0 2rem;
+    }
 
     .logo-con {
       display: flex;
@@ -126,7 +129,6 @@ const FooterStyled = styled.div`
     .button-nav {
       display: flex;
       justify-content: space-between;
-      background: red;
 
       li {
         padding: 2rem 0;

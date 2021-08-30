@@ -102,6 +102,10 @@ const FooterStyled = styled.div`
     padding: 5rem 3rem;
   }
 
+  @media screen and (max-width: 700p) {
+    padding: 0;
+  }
+
   .footer-con {
     display: grid;
     /* grid-template-columns: repeat(2, 1fr); */

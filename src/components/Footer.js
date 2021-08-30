@@ -112,7 +112,9 @@ const FooterStyled = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 
     @media screen and (max-width: 700px) {
-      padding: 0 2rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
     }
 
     .logo-con {

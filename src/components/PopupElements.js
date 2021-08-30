@@ -30,6 +30,7 @@ export const PopupInner = styled.div`
   max-height: 100%;
   max-width: 640px;
   background: #fff;
+  font-family: "Tahoma", sans-serif;
 
   @media screen and (max-width: 700px) {
     font-size: 1.4rem;

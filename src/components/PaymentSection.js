@@ -116,6 +116,7 @@ const PaymentStyled = styled.section`
 
     @media screen and (max-width: 700px) {
       font-size: 2rem;
+      margin-top: 3rem;
     }
     span {
       align-items: center;

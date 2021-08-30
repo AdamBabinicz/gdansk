@@ -20,7 +20,7 @@ function HeaderContent() {
   const [state] = useState({
     title: "Park Oliwski",
     img: Img,
-    p0: "Początkiem dzisiejszego parku był przyklasztorny ogród założony przez cystersów. Prawdopodobnie był położony po wschodniej stronie starej siedziby opatów z XV wieku, dalej do Zatoki Gdańskiej rozciągał się nadmorski las, który rozcinał Potok Oliwski. Po wzniesieniu przez opata Franciszka Zaleskiego pod koniec pierwszej połowy XVII wieku nowej siedziby opatów, ogród został poszerzony w kierunku południowo-zachodnim, stykając się ze starszym ogrodem klasztornym.",
+    p0: "Początkiem dzisiejszego parku był przyklasztorny ogród założony przez cystersów. Prawdopodobnie był położony po wschodniej stronie starej siedziby opatów z XV wieku, dalej do Zatoki Gdańskiej rozciągał się nadmorski las, który rozcinał Potok Oliwski. Po wzniesieniu przez opata Franciszka Zaleskiego pod koniec pierwszej połowy XVII wieku nowej siedziby opatów, ...",
     em: "pl.wikipedia.org/wiki/Park_Oliwski",
   });
 

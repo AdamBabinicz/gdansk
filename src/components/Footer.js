@@ -122,6 +122,9 @@ const FooterStyled = styled.div`
       align-items: center;
 
       .logo-items {
+        @media screen and (max-width: 700px) {
+          font-size: 1.3rem;
+        }
         img {
           width: 6rem;
           margin-right: 2rem;

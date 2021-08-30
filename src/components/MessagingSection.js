@@ -58,6 +58,10 @@ const MessageStyle = styled.section`
     /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: repeat(auto-fit, minmax(400px, auto));
 
+    @media screen and (max-width: 700px) {
+      padding: 0 1rem;
+    }
+
     @media screen and (max-width: 1347px) {
       grid-template-columns: repeat(1, 1fr);
     }
@@ -78,10 +82,15 @@ const MessageStyle = styled.section`
 
         @media screen and (max-width: 700px) {
           font-size: 2rem;
+          padding: 1rem;
         }
       }
       .m-para {
         padding: 1.3rem 0 2rem;
+
+        @media screen and (max-width: 700px) {
+          padding: 1rem;
+        }
       }
       .images-con {
         display: flex;
@@ -115,7 +124,11 @@ const MessageStyle = styled.section`
         left: -10%;
         z-index: -1;
         width: 10rem;
-        /* opacity: 0.2; */
+
+        @media screen and (max-width: 700px) {
+          top: -3%;
+          left: 1%;
+        }
       }
     }
     .right-items {
@@ -130,7 +143,7 @@ const MessageStyle = styled.section`
           rgb(108, 177, 255);
 
         @media screen and (max-width: 700px) {
-          max-width: 100%;
+          width: 100%;
         }
       }
       .bgFota {

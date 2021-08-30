@@ -132,6 +132,7 @@ const CardStyled = styled.section`
 
     img {
       width: 100%;
+      height: 100%;
     }
   }
 

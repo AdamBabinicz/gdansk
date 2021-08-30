@@ -108,8 +108,8 @@ const FooterStyled = styled.div`
 
   .footer-con {
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, auto)); */
 
     @media screen and (max-width: 700px) {
       display: flex;

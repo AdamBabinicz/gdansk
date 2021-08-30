@@ -93,7 +93,7 @@ const ChartStyled = styled.section`
 
         img {
           box-shadow: 0px 25px 50px rgba(22, 25, 79, 0.05);
-          border-radius: 62px;
+          border-radius: 32px;
           background: linear-gradient(
               to bottom,
               rgba(0, 0, 0, 0.4),
@@ -102,9 +102,9 @@ const ChartStyled = styled.section`
             rgb(108, 177, 255);
           width: 100%;
 
-          /* @media screen and (max-width: 700px) {
-            width: 100%;
-          } */
+          @media screen and (max-width: 700px) {
+            border-radius: 20px;
+          }
         }
         .stats-money {
           display: flex;

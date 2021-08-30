@@ -82,15 +82,15 @@ const MessageStyle = styled.section`
 
         @media screen and (max-width: 700px) {
           font-size: 2rem;
-          padding: 1rem;
+          /* padding: 1rem; */
         }
       }
       .m-para {
         padding: 1.3rem 0 2rem;
 
-        @media screen and (max-width: 700px) {
+        /* @media screen and (max-width: 700px) {
           padding: 1rem;
-        }
+        } */
       }
       .images-con {
         display: flex;
@@ -152,6 +152,10 @@ const MessageStyle = styled.section`
         right: -5%;
         z-index: -1;
         width: 10rem;
+
+        @media screen and (max-width: 700px) {
+          bottom: -4%;
+        }
       }
     }
   }

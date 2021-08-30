@@ -76,11 +76,11 @@ const ChartStyled = styled.section`
   .chart-con {
     display: grid;
     /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 
-    @media screen and (max-width: 1347px) {
+    /* @media screen and (max-width: 1347px) {
       grid-template-columns: repeat(1, 1fr);
-    }
+    } */
 
     .chart-left {
       width: 80%;
@@ -89,7 +89,8 @@ const ChartStyled = styled.section`
         width: 100%;
       }
       .stats {
-        color: red;
+        padding: 0 1rem;
+
         img {
           box-shadow: 0px 25px 50px rgba(22, 25, 79, 0.05);
           border-radius: 62px;
@@ -99,8 +100,11 @@ const ChartStyled = styled.section`
               rgba(255, 255, 255, 0.7)
             ),
             rgb(108, 177, 255);
-          padding: 1rem;
           width: 100%;
+
+          /* @media screen and (max-width: 700px) {
+            width: 100%;
+          } */
         }
         .stats-money {
           display: flex;

@@ -38,6 +38,10 @@ const CardSectionStyled = styled.section`
     /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 
+    @media screen and (max-width: 700px) {
+      padding: 1.3rem 1rem;
+    }
+
     /* @media screen and (max-width: 845px) {
       grid-template-columns: repeat(1, 1fr);
     } */
@@ -45,17 +49,13 @@ const CardSectionStyled = styled.section`
     .card-left {
       padding-right: 3rem;
 
-      @media screen and (max-width: 700px) {
-        padding: 1rem 0;
-      }
-
       p {
         padding: 1.4rem 0;
         line-height: 1.8rem;
 
-        @media screen and (max-width: 700px) {
+        /* @media screen and (max-width: 700px) {
           padding: 1rem;
-        }
+        } */
       }
       .secondary-heading {
         font-size: 3rem;
@@ -76,9 +76,9 @@ const CardSectionStyled = styled.section`
       @media screen and (max-width: 700px) {
         justify-content: center;
         margin-bottom: 3rem;
-        img {
-          max-width: 100%;
-        }
+      }
+      img {
+        width: 100%;
       }
     }
   }

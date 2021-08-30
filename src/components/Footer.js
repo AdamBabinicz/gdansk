@@ -123,23 +123,22 @@ const FooterStyled = styled.div`
         }
       }
     }
-  }
+    .button-nav {
+      display: flex;
+      justify-content: space-between;
 
-  .button-nav {
-    display: flex;
-    justify-content: space-between;
+      li {
+        padding: 2rem 0;
+        color: #16194f;
+        font-family: "Tahoma", sans-serif;
+        font-size: 3rem;
 
-    li {
-      padding: 2rem 0;
-      color: #16194f;
-      font-family: "Tahoma", sans-serif;
-      font-size: 3rem;
+        a {
+          transition: all 0.3s;
 
-      a {
-        transition: all 0.3s;
-
-        &:hover {
-          color: var(--border-colour);
+          &:hover {
+            color: var(--border-colour);
+          }
         }
       }
     }

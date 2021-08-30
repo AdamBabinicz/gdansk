@@ -56,7 +56,7 @@ const MessageStyle = styled.section`
   .message-con {
     display: grid;
     /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
 
     @media screen and (max-width: 1347px) {
       grid-template-columns: repeat(1, 1fr);

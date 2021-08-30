@@ -110,7 +110,6 @@ const FooterStyled = styled.div`
     display: grid;
     /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    background: red;
 
     .logo-con {
       display: flex;
@@ -126,12 +125,17 @@ const FooterStyled = styled.div`
     .button-nav {
       display: flex;
       justify-content: space-between;
+      background: red;
 
       li {
         padding: 2rem 0;
         color: #16194f;
         font-family: "Tahoma", sans-serif;
         font-size: 3rem;
+
+        @media screen and (max-width: 700px) {
+          font-size: 1.5rem;
+        }
 
         a {
           transition: all 0.3s;

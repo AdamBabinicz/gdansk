@@ -110,6 +110,7 @@ const FooterStyled = styled.div`
     display: grid;
     /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    padding: 0 2rem;
 
     .logo-con {
       display: flex;
@@ -134,7 +135,7 @@ const FooterStyled = styled.div`
         font-size: 3rem;
 
         @media screen and (max-width: 700px) {
-          font-size: 1.5rem;
+          font-size: 2rem;
         }
 
         a {

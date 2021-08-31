@@ -27,7 +27,7 @@ const questions = [
     id: 5,
     title: "W 1308 roku Gdańsk był oblegany przez Brandenburczyków",
     description:
-      "W efekcie wezwano na pomoc Krzyżaków, którzy okazali się nie wyswobodzicielami a wrogami. Wdarli się do grodu, spalili go i dokonali pogromu ludności Gdańska, który przeszedł do historii jako 'rzeź Gdańska'. W jej wyniku zginęło kikuset Gdańszczan.",
+      "W efekcie wezwano na pomoc Krzyżaków, którzy okazali się nie wyswobodzicielami a wrogami. Wdarli się do grodu, spalili go i dokonali pogromu ludności Gdańska, który przeszedł do historii jako 'rzeź Gdańska'. W jej wyniku zginęło kilkuset Gdańszczan.",
   },
   {
     id: 6,

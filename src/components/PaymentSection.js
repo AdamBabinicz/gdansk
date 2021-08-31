@@ -100,10 +100,10 @@ const PaymentStyled = styled.section`
     grid-gap: 3rem;
     padding-top: 7.5rem;
 
-    /* @media screen and (max-width: 570px) {
-      grid-template-columns: repeat(1, 1fr);
+    @media screen and (max-width: 570px) {
+      padding-top: 3rem;
       row-gap: 2rem;
-    } */
+    }
   }
   .small-heading {
     font-family: "Tourney", cursive;

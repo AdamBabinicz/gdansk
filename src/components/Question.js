@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import plus from "../img/10.png";
 import minus from "../img/11.png";
+import { Fade } from "react-reveal";
 
 function Question({ title, description }) {
   const [toggle, setToggle] = useState(false);
@@ -10,21 +11,23 @@ function Question({ title, description }) {
   };
 
   return (
-    <QuestionStyled>
-      <div className="q-con">
-        <div className="toggle-title">
-          <h4>{title}</h4>
-          <button onClick={btnToggler}>
-            {toggle ? (
-              <img src={minus} alt="..." />
-            ) : (
-              <img src={plus} alt="..." />
-            )}
-          </button>
+    <Fade cascade>
+      <QuestionStyled>
+        <div className="q-con">
+          <div className="toggle-title">
+            <h4>{title}</h4>
+            <button onClick={btnToggler}>
+              {toggle ? (
+                <img src={minus} alt="..." />
+              ) : (
+                <img src={plus} alt="..." />
+              )}
+            </button>
+          </div>
+          {toggle && <p>{description}</p>}
         </div>
-        {toggle && <p>{description}</p>}
-      </div>
-    </QuestionStyled>
+      </QuestionStyled>
+    </Fade>
   );
 }
 

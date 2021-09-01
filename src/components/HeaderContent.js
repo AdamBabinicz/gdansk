@@ -7,6 +7,7 @@ import img from "../img/3.png";
 import img1 from "../img/5.jpg";
 import img2 from "../img/6.jpg";
 import img3 from "../img/7.jpg";
+import { Fade } from "react-reveal";
 
 function HeaderContent() {
   const [show, setShow] = useState(false);
@@ -26,37 +27,41 @@ function HeaderContent() {
 
   return (
     <HeaderContentStyled>
-      <div className="left-content">
-        <div className="left-text-container">
-          <h1>Gdańsk - perła północy</h1>
-          <p className="white">
-            Jest to miasto o&nbsp;ponadtysiącletniej historii, którego tożsamość
-            na&nbsp;przestrzeni wieków kształtowała się pod wpływem różnych
-            kultur. Gdańsk był również największym miastem Rzeczypospolitej
-            Obojga Narodów, miastem królewskim i&nbsp;hanzeatyckim, posiadał
-            prawo do&nbsp;czynnego uczestnictwa w&nbsp;akcie wyboru króla,
-            w&nbsp;XVI&nbsp;w. był najbogatszym w&nbsp;Rzeczypospolitej.
-          </p>
-          <div onClick={() => setButtonPopup(true)}>
-            <Secondarybutton name={"Zobacz"} />
+      <Fade left cascade>
+        <div className="left-content">
+          <div className="left-text-container">
+            <h1>Gdańsk - perła północy</h1>
+            <p className="white">
+              Jest to miasto o&nbsp;ponadtysiącletniej historii, którego
+              tożsamość na&nbsp;przestrzeni wieków kształtowała się pod wpływem
+              różnych kultur. Gdańsk był również największym miastem
+              Rzeczypospolitej Obojga Narodów, miastem królewskim
+              i&nbsp;hanzeatyckim, posiadał prawo do&nbsp;czynnego uczestnictwa
+              w&nbsp;akcie wyboru króla, w&nbsp;XVI&nbsp;w. był najbogatszym
+              w&nbsp;Rzeczypospolitej.
+            </p>
+            <div onClick={() => setButtonPopup(true)}>
+              <Secondarybutton name={"Zobacz"} />
+            </div>
+            <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+              <h3 style={{ fontSize: "15px" }}>{state.title}</h3>
+              <br />
+              <img src={state.img} alt="..." /> <br />
+              <p style={{ fontSize: "14px" }}>{state.p0}</p>
+              <em style={{ fontSize: "11px" }}>{state.em}</em>
+              <br />
+            </Popup>
           </div>
-          <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-            <h3 style={{ fontSize: "15px" }}>{state.title}</h3>
-            <br />
-            <img src={state.img} alt="..." /> <br />
-            <p style={{ fontSize: "14px" }}>{state.p0}</p>
-            <em style={{ fontSize: "11px" }}>{state.em}</em>
-            <br />
-          </Popup>
         </div>
-      </div>
-
-      <div className="right-content">
-        <img src={img} alt="..." className="ring" />
-        <img src={img1} alt="..." className="ring1" />
-        <img src={img2} alt="..." className="ring2" />
-        <img src={img3} alt="..." className="ring3" />
-      </div>
+      </Fade>
+      <Fade right>
+        <div className="right-content">
+          <img src={img} alt="..." className="ring" />
+          <img src={img1} alt="..." className="ring1" />
+          <img src={img2} alt="..." className="ring2" />
+          <img src={img3} alt="..." className="ring3" />
+        </div>
+      </Fade>
     </HeaderContentStyled>
   );
 }

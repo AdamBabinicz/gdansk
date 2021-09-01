@@ -11,7 +11,7 @@ import PaymentSection from "./components/PaymentSection";
 import FAQSection from "./components/FAQSection";
 import Footer from "./components/Footer";
 import Slider from "./components/Slider";
-// import ScrollToTop from "./components/ScrollToTop";
+import { Fade } from "react-reveal";
 
 function App() {
   const smallScreen = window.screen.width <= 480 ? true : false;
@@ -51,15 +51,29 @@ function App() {
       <Header />
       <OuterLayout>
         <MainStyled>
-          <CardSection />
-          <ChartSection />
-          <MessagingSection />
-          <PaymentSection />
-          <FAQSection />
-          <Slider />
+          <Fade left>
+            <CardSection />
+          </Fade>
+          <Fade right>
+            <ChartSection />
+          </Fade>
+          <Fade left>
+            <MessagingSection />
+          </Fade>
+          <Fade right>
+            <PaymentSection />
+          </Fade>
+          <Fade left>
+            <FAQSection />
+          </Fade>
+          <Fade right>
+            <Slider />
+          </Fade>
         </MainStyled>
       </OuterLayout>
-      <Footer />
+      <Fade bottom>
+        <Footer />
+      </Fade>
     </>
   );
 }

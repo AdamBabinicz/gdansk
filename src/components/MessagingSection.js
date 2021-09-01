@@ -5,6 +5,7 @@ import bgCircles from "../img/7.png";
 import img1 from "../img/9.png";
 import avatar1 from "../img/16.jpg";
 import img2 from "../img/8.png";
+import { Fade } from "react-reveal";
 
 function MessagingSection() {
   return (
@@ -13,25 +14,28 @@ function MessagingSection() {
         <div className="message-con">
           <div className="left-items">
             <h2 className="secondary-heading">Rozwój</h2>
-            <p className="m-para">
-              Nie wiadomo gdzie istniała pierwsza umocniona osada zbudowana
-              przez Piastów, ponieważ gród w widłach Motławy i Wisły zbudowano
-              dopiero w latach 50.-60. XI wieku. Zajmował on przestrzeń około
-              2,27 ha z szacowaną przez archeologów liczbą ok. 250 domów z 1000
-              mieszkańców. W 997 roku w mieście przebywał w drodze do Prus
-              święty Wojciech. W latach 60. XI wieku powstał u ujścia Motławy do
-              Wisły gród obronny. Po zwycięskiej wojnie z Pomorzanami Bolesław
-              III Krzywousty odzyskał dla Polski całe Pomorze Zachodnie i zdobył
-              Pomorze Przednie. W latach 1217 i 1227 miały miejsce wyprawy
-              pomorskie Leszka Białego i ustanowiono zwierzchność Polski nad
-              Pomorzem Gdańskim. Po objęciu rządów na Pomorzu Gdańskim przez
-              Świętopełka II, nastąpił okres uniezależnienia się regionu. W 1263
-              miasto otrzymało prawa miejskie wzorowane na prawie lubeckim. W
-              roku 1271 Brandenburczycy zajęli miasto. Mściwoj II dzięki pomocy
-              Bolesława Pobożnego odzyskał miasto szturmem w 1272 roku. 15
-              lutego 1282 w wyniku układu w Kępnie władca Wielkopolski, Przemysł
-              II, uzyskał zwierzchnictwo nad Pomorzem Gdańskim.
-            </p>
+            <Fade bottom>
+              <p className="m-para">
+                Nie wiadomo gdzie istniała pierwsza umocniona osada zbudowana
+                przez Piastów, ponieważ gród w widłach Motławy i Wisły zbudowano
+                dopiero w latach 50.-60. XI wieku. Zajmował on przestrzeń około
+                2,27 ha z szacowaną przez archeologów liczbą ok. 250 domów z
+                1000 mieszkańców. W 997 roku w mieście przebywał w drodze do
+                Prus święty Wojciech. W latach 60. XI wieku powstał u ujścia
+                Motławy do Wisły gród obronny. Po zwycięskiej wojnie z
+                Pomorzanami Bolesław III Krzywousty odzyskał dla Polski całe
+                Pomorze Zachodnie i zdobył Pomorze Przednie. W latach 1217 i
+                1227 miały miejsce wyprawy pomorskie Leszka Białego i
+                ustanowiono zwierzchność Polski nad Pomorzem Gdańskim. Po
+                objęciu rządów na Pomorzu Gdańskim przez Świętopełka II,
+                nastąpił okres uniezależnienia się regionu. W 1263 miasto
+                otrzymało prawa miejskie wzorowane na prawie lubeckim. W roku
+                1271 Brandenburczycy zajęli miasto. Mściwoj II dzięki pomocy
+                Bolesława Pobożnego odzyskał miasto szturmem w 1272 roku. 15
+                lutego 1282 w wyniku układu w Kępnie władca Wielkopolski,
+                Przemysł II, uzyskał zwierzchnictwo nad Pomorzem Gdańskim.
+              </p>
+            </Fade>
             <div className="images-con">
               <img src={avatar1} alt="..." className="image-1" />
               {/* <img src={} alt="..." className="image-2" />

@@ -146,7 +146,7 @@ const NavigationStyled = styled.nav`
       position: fixed;
       top: 1rem;
       right: 1rem;
-      z-index: 10;
+      z-index: 9999;
     }
   }
 

@@ -7,7 +7,7 @@ import img from "../img/3.png";
 import img1 from "../img/5.jpg";
 import img2 from "../img/6.jpg";
 import img3 from "../img/7.jpg";
-import { Fade } from "react-reveal";
+import { Fade, Bounce } from "react-reveal";
 
 function HeaderContent() {
   const [show, setShow] = useState(false);
@@ -41,7 +41,9 @@ function HeaderContent() {
               w&nbsp;Rzeczypospolitej.
             </p>
             <div onClick={() => setButtonPopup(true)}>
-              <Secondarybutton name={"Zobacz"} />
+              <Bounce left>
+                <Secondarybutton name={"Zobacz"} />
+              </Bounce>
             </div>
             <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
               <h3 style={{ fontSize: "15px" }}>{state.title}</h3>

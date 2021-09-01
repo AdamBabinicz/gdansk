@@ -51,29 +51,29 @@ function App() {
       <Header />
       <OuterLayout>
         <MainStyled>
-          <Fade left>
-            <CardSection />
-          </Fade>
-          <Fade right>
-            <ChartSection />
-          </Fade>
-          <Fade left>
-            <MessagingSection />
-          </Fade>
-          <Fade right>
-            <PaymentSection />
-          </Fade>
-          <Fade left>
-            <FAQSection />
-          </Fade>
-          <Fade right>
-            <Slider />
-          </Fade>
+          {/* <Fade left> */}
+          <CardSection />
+          {/* </Fade> */}
+          {/* <Fade right> */}
+          <ChartSection />
+          {/* </Fade> */}
+          {/* <Fade left> */}
+          <MessagingSection />
+          {/* </Fade> */}
+          {/* <Fade right> */}
+          <PaymentSection />
+          {/* </Fade> */}
+          {/* <Fade left> */}
+          <FAQSection />
+          {/* </Fade> */}
+          {/* <Fade right> */}
+          <Slider />
+          {/* </Fade> */}
         </MainStyled>
       </OuterLayout>
-      <Fade bottom>
-        <Footer />
-      </Fade>
+      {/* <Fade bottom> */}
+      <Footer />
+      {/* </Fade> */}
     </>
   );
 }

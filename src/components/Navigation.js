@@ -26,100 +26,100 @@ function Navigation({ toggle }) {
   };
 
   return (
-    <Fade top>
-      <NavigationStyled scrollNav={scrollNav}>
-        <Link to="/" smooth={true} offset={-70} duration={500} className="logo">
-          <img src={logo} alt="..." />
-        </Link>
-        <div className="ic">
-          <FaBars onClick={toggle} style={{ cursor: "pointer" }} />
-        </div>
-        <ul>
-          <li>
-            <Link
-              to="/"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Start
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/poczatki"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Początki
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/nazwa"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Nazwa
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/rozwoj"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Rozwój
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/amberif"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Amberif
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/ciekawostki"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Ciekawostki
-            </Link>
-          </li>
-        </ul>
-        <Link
-          to="/galeria"
-          // activeClass="active"
-          // spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          <PrimaryButton name={"Galeria"} />
-        </Link>
-      </NavigationStyled>
-    </Fade>
+    // <Fade top>
+    <NavigationStyled scrollNav={scrollNav}>
+      <Link to="/" smooth={true} offset={-70} duration={500} className="logo">
+        <img src={logo} alt="..." />
+      </Link>
+      <div className="ic">
+        <FaBars onClick={toggle} style={{ cursor: "pointer" }} />
+      </div>
+      <ul>
+        <li>
+          <Link
+            to="/"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Start
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/poczatki"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Początki
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/nazwa"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Nazwa
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/rozwoj"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Rozwój
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/amberif"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Amberif
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/ciekawostki"
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Ciekawostki
+          </Link>
+        </li>
+      </ul>
+      <Link
+        to="/galeria"
+        // activeClass="active"
+        // spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+      >
+        <PrimaryButton name={"Galeria"} />
+      </Link>
+    </NavigationStyled>
+    // </Fade>
   );
 }
 

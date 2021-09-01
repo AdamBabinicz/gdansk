@@ -39,32 +39,31 @@ function ChartSection() {
             </div>
           </div>
           <div className="chart-right">
-            <RubberBand>
-              <h2 className="secondary-heading">Nazwa miasta</h2>
-            </RubberBand>
-            <Roll right>
-              <p>
-                Według najszerzej przyjętej (Brückner, Rospond, Rudnicki)
-                pochodzi od rozlewiska w ujściu Wisły i ma słowiańskie
-                pochodzenie. Utworzono ją poprzez dodanie sufiksu -ьsk- do
-                prasłowiańskiego rdzenia *-gьd oznaczającego mokry, wilgotny.
-                Według innej teorii nazwa ma się wywodzić od niezachowanej nazwy
-                pobliskiej rzeki (prawdopodobnie Motławy), która dziś brzmiałaby
-                Gdania.
-              </p>
-              <p>
-                (Nazwa Motława pochodzi z języka pruskiego, przeniesionego w
-                okolice Pruszcza Gdańskiego zza Wisły w drugiej połowie XIII
-                w.). Formant -sk w jęz. polskim (także innych słowiańskich) był
-                produktywny w nazwach topograficznych i dzierżawczych i stanowi
-                cechę charakterystyczną polskich nazw miejscowych i
-                przestrzennych. Oboczności tego formantu ...
-              </p>
-            </Roll>
+            {/* <RubberBand> */}
+            <h2 className="secondary-heading">Nazwa miasta</h2>
+            {/* </RubberBand> */}
+            {/* <Roll right> */}
+            <p>
+              Według najszerzej przyjętej (Brückner, Rospond, Rudnicki) pochodzi
+              od rozlewiska w ujściu Wisły i ma słowiańskie pochodzenie.
+              Utworzono ją poprzez dodanie sufiksu -ьsk- do prasłowiańskiego
+              rdzenia *-gьd oznaczającego mokry, wilgotny. Według innej teorii
+              nazwa ma się wywodzić od niezachowanej nazwy pobliskiej rzeki
+              (prawdopodobnie Motławy), która dziś brzmiałaby Gdania.
+            </p>
+            <p>
+              (Nazwa Motława pochodzi z języka pruskiego, przeniesionego w
+              okolice Pruszcza Gdańskiego zza Wisły w drugiej połowie XIII w.).
+              Formant -sk w jęz. polskim (także innych słowiańskich) był
+              produktywny w nazwach topograficznych i dzierżawczych i stanowi
+              cechę charakterystyczną polskich nazw miejscowych i
+              przestrzennych. Oboczności tego formantu ...
+            </p>
+            {/* </Roll> */}
             <div onClick={() => setButtonPopup(true)}>
-              <Bounce right>
-                <AnimatedButton name={"Czytaj więcej"} />
-              </Bounce>
+              {/* <Bounce right> */}
+              <AnimatedButton name={"Czytaj więcej"} />
+              {/* </Bounce> */}
             </div>
             <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
               <h3 style={{ fontSize: "15px" }}>{state.title}</h3>

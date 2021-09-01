@@ -16,7 +16,7 @@ export const PopupContainer = styled.div`
   justify-content: center;
   align-items: center; */
   color: #333;
-  z-index: 999;
+  z-index: 9999;
 `;
 
 export const PopupInner = styled.div`

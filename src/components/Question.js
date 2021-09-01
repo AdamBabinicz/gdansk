@@ -11,23 +11,23 @@ function Question({ title, description }) {
   };
 
   return (
-    <Fade cascade>
-      <QuestionStyled>
-        <div className="q-con">
-          <div className="toggle-title">
-            <h4>{title}</h4>
-            <button onClick={btnToggler}>
-              {toggle ? (
-                <img src={minus} alt="..." />
-              ) : (
-                <img src={plus} alt="..." />
-              )}
-            </button>
-          </div>
-          {toggle && <p>{description}</p>}
+    // <Fade cascade>
+    <QuestionStyled>
+      <div className="q-con">
+        <div className="toggle-title">
+          <h4>{title}</h4>
+          <button onClick={btnToggler}>
+            {toggle ? (
+              <img src={minus} alt="..." />
+            ) : (
+              <img src={plus} alt="..." />
+            )}
+          </button>
         </div>
-      </QuestionStyled>
-    </Fade>
+        {toggle && <p>{description}</p>}
+      </div>
+    </QuestionStyled>
+    //   </Fade>
   );
 }
 

@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
       background: var(--neutral-light);
       font-size: 1.2rem;
       overflow-x: hidden;
+      z-index: 0;
       a {
          color: inherit;
          }

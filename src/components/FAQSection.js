@@ -10,7 +10,10 @@ function FAQSection() {
     <FaqStyled id="/ciekawostki">
       <InnerLayout>
         <h3 className="small-heading">
-          Ciekawostki <span> o&nbsp;Gdańsku</span>
+          Ciekawostki
+          <span>
+            <br /> o&nbsp;Gdańsku
+          </span>
         </h3>
         <p className="c-para">
           W mieście jest wiele zabytków, z których należy wymienić m.in. ulicę

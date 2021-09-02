@@ -32,7 +32,7 @@ function Navigation({ toggle }) {
         <img src={logo} alt="..." />
       </Link>
       <div className="ic">
-        <FaBars onClick={toggle} style={{ cursor: "pointer" }} />
+        <FaBars onClick={toggle} />
       </div>
       <ul>
         <li>
@@ -129,6 +129,7 @@ const NavigationStyled = styled.nav`
   min-height: 10vh;
   align-items: center;
   position: fixed;
+  z-index: 1;
 
   .logo img {
     width: 3rem;
@@ -137,6 +138,7 @@ const NavigationStyled = styled.nav`
 
   .ic {
     display: none;
+    cursor: pointer;
     @media (max-width: 768px) {
       display: block;
       /* transform: translateX(500%); */
@@ -146,7 +148,6 @@ const NavigationStyled = styled.nav`
       position: fixed;
       top: 1rem;
       right: 1rem;
-      z-index: 15;
     }
   }
 
